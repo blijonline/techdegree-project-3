@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Techdegree Project 3 - Online Registration Form</title>
+</head>
+
+<body>
+    
+    <div class="title">
+        <h1>THE CODE REVIEW</h1>
+    </div> <!-- /title -->  
+    
+    <div class="container">
+
+    <h1>Signup for our newsletter</h1>
+        <p class="center-p">Get the latest news on how your code is doing right in your inbox</p>
+        
+        <hr class="doubleline"> 
+        
+    <form action="index.html" method="post">
+<fieldset>
+     <legend><h3>Contact information</h3></legend>
+    <ul class="flex-s1">
+        <li>
+        </li>
+        <li> 
+          <label for="name">Full Name</label>  
+          <input type="text" id="name" name="user_full_name" placeholder="Required" required> 
+        </li> <!-- /Full Name Field-->
+        <li>
+          <label for="mail">Email Address</label> 
+          <input type="email" id="mail" name="user_email" placeholder="Required" required>
+        </li><!-- /Email Address Field-->
+        <li>
+          <label for="tel">Phone Number</label> 
+          <input type="tel" id="tel" name="user_tel">
+        </li> <!-- /Phone Number Field-->
+        <li>
+          <label for="address">Street Address</label>  
+          <input type="text" id="address" name="user_address">
+        </li> <!-- /Street Adress Field-->
+        <li>
+          <label for="city">City</label>  
+          <input type="text" id="city" name="user_city">
+        </li><!-- /City Adress Field-->
+        <li>
+          <label for="states">State</label>
+          <select id="states" name="user_state">
+          <option value="" disabled selected>Choose State</option>
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District Of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+          </select>
+        </li> <!-- /State Field-->
+        <li>
+          <label for="zipcode">Zip Code</label>  
+          <div class="halffield">
+            <input type="text" id="zipcode" name="user_zip_code"></div>
+        </li> <!-- /Zip code Field-->
+    </ul> <!--- /flex-s1 -->
+</fieldset>
+        
+        <hr>
+  
+<fieldset class="s2">
+    <legend><h3>Newsletter</h3></legend>
+    
+        <p>Select the newsletters your would like to recieve</p>
+    
+        <input type="checkbox" class="noheight" id="htmlnews" value="html_news" name="user_htmlnewsletter">
+        <label for="htmlnews">HTML news</label><br>
+        <!-- /HTML news checkbox -->
+        <input type="checkbox" class="noheight" id="cssnews" value="css_news" name="user_cssnewsletter">
+        <label for="cssnews">CSS news</label><br>
+        <!-- /CSS news checkbox -->
+        <input type="checkbox" class="noheight" id="jsnews" value="js_news" name="user_jsnewsletter">
+        <label for="jsnews">Javascript news</label>
+        <!-- /JS checkbox -->
+        <p>Newsletter format</p>
+    
+        <input type="radio" class="noheight" id="htmlformat" value="formathtml" name="user_news_format">
+        <label for="htmlformat">HTML</label><br>
+        <!-- /Radio HTML -->
+        <input type="radio" class="noheight" id="formattext" value="formattext" name="user_news_format">
+        <label for="formattext">Plain text</label>
+        <!-- /Plain text -->
+        
+    <ul class="flex-s2">
+        <li>
+        <label for="other_topics">Other topics you'd like to hear about</label>
+         <textarea id="other_topics" name="user_topics"></textarea>
+        </li> <!-- /Textarea  field -->
+        <li>
+        <div class="codesnip">
+         <textarea id="code_snip" name="user_topics" placeholder="Drop here your favorite code snipped"></textarea>
+        </div>    
+        </li> <!-- /Codesnip  textarea  field -->
+    </ul>
+        <button type="submit">Sign Up</button>
+    </fieldset>
+    </form>
+        
+    <footer>
+         <p><i>Copyright The Code Review</i></p>
+    </footer>
+        
+    </div> <!--/ container -->
+</body>
+</html>
